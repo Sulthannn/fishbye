@@ -1,0 +1,45 @@
+{% load static %}
+{% block content %}
+{% if user.is_authenticated %}
+<meta http-equiv="refresh" content="0; url={% url 'halamantangkapan' %}">
+{% else %} 
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="#" />
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{% static 'registrasi/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{% static 'registrasi/css/style.css' %}">
+	</head>
+
+	<body>
+
+		<div class="wrapper" style="background-image: url('{% static 'assets/img/gallery/nelayan2.jpeg' %}');">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="{% static 'assets/img/nelayankami.jpeg' %}" alt="">
+				</div>
+                <form  method="post">
+					<h3>Login Form</h3>
+                        {% csrf_token %}
+                        
+                        {{ form.as_p }}
+					<button type="submit" >Login
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button><br>
+                    <p style="text-align:center">Tidak Punya Akun? <a href="/registrasi"> Registrasi!</a></p>
+				</form>
+			</div>
+		</div>
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
+
+{% endif %}
+{% endblock %}

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Registrasi</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="#" />
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{% static 'registrasi/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{% static 'registrasi/css/style.css' %}">
+	</head>
+
+	<body>
+		<div class="wrapper" style="background-image: url('{% static 'assets/img/gallery/nelayan5.jpeg' %}');">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="{% static 'assets/img/nelayankami.jpeg' %}" alt="">
+				</div>
+                {% for message in messages %}
+                {% if message.tags == 'success' %}
+                   <div class="alert alert-success">{{ message }}</div>
+                {% else %}
+              <div class="alert alert-danger">{{ message }}</div>
+                {% endif %}
+              {% endfor %}
+                <form action="{% url 'registrasi' %}" method="post">
+					<h3>Registration Form</h3>
+                    {% csrf_token %}
+                    
+                    {{ form.as_p }}
+					<button type="submit">Register
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button><br>
+                    <p class="text-center text-muted">Sudah punya akun? <a href="/login"
+                        class="fw-bold text-body"><u>Login</u></a></p>
+				</form>
+			</div>
+		</div>
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
