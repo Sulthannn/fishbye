@@ -20,14 +20,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'registrasi/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'registrasi/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'registrasi/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'registrasi/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'registrasi/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+  <link href="{% static 'registrasi/assets/css2/main.css' %}" rel="stylesheet">
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
 <style>
@@ -56,7 +56,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="/index" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>FISHBYE<span>.</span></h1>
@@ -93,7 +93,7 @@
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="{% static 'assets/img/gallery/nelayan2.jpeg' %}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+          <img src="{% static 'registrasi/assets/img/gallery/nelayan2.jpeg' %}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url({% static 'assets/img/gallery/nelayan5.jpeg' %}) ;" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url({% static 'registrasi/assets/img/gallery/nelayan5.jpeg' %}) ;" data-aos="fade-up" data-aos-delay="100">
           </div>
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
             <div class="content ps-0 ps-lg-5">
@@ -124,7 +124,7 @@
               </ul>
 
               <div class="position-relative mt-4">
-                <img src="{% static 'assets/img/tangkapan.jpeg' %}" class="img-fluid" alt="">
+                <img src="{% static 'registrasi/assets/img/tangkapan.jpeg' %}" class="img-fluid" alt="">
               </div>
             </div>
           </div>
@@ -288,11 +288,11 @@
 
         <div class="gallery-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/nelayan1.jpg' %}"><img src="{% static 'assets/img/gallery/nelayan1.jpg' %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/nelayan2.jpeg' %}"><img src="{% static 'assets/img/gallery/nelayan2.jpeg' %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/nelayan3.jpeg' %}"><img src="{% static 'assets/img/gallery/nelayan3.jpeg' %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/nelayan4.jpeg' %}"><img src="{% static 'assets/img/gallery/nelayan4.jpeg' %}" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'assets/img/gallery/nelayan5.jpeg' %}"><img src="{% static 'assets/img/gallery/nelayan5.jpeg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'registrasi/assets/img/gallery/nelayan1.jpg' %}"><img src="{% static 'assets/img/gallery/nelayan1.jpg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'registrasi/assets/img/gallery/nelayan2.jpeg' %}"><img src="{% static 'assets/img/gallery/nelayan2.jpeg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'registrasi/assets/img/gallery/nelayan3.jpeg' %}"><img src="{% static 'assets/img/gallery/nelayan3.jpeg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'registrasi/assets/img/gallery/nelayan4.jpeg' %}"><img src="{% static 'assets/img/gallery/nelayan4.jpeg' %}" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="{% static 'registrasi/assets/img/gallery/nelayan5.jpeg' %}"><img src="{% static 'assets/img/gallery/nelayan5.jpeg' %}" class="img-fluid" alt=""></a></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -373,15 +373,15 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
-  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
-  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
-  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'registrasi/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'registrasi/assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'registrasi/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'registrasi/assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'registrasi/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'registrasi/assets/vendor/php-email-form/validate.js' %}"></script>
 
   <!-- Template Main JS File -->
-  <script src="{% static 'assets/js/main.js' %}"></script>
+  <script src="{% static 'registrasi/assets/js/main.js' %}"></script>
 
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 <script>
